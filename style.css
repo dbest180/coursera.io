@@ -1,0 +1,31 @@
+body {
+    background-color: #e7edf5;   /* light gray-blue */
+    color: #000000;               /* black text */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0 1.2rem;
+    line-height: 1.6;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+h1, h2 {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+section {
+    padding: 1rem 0;
+    border-bottom: 1px solid #b5c0cc;  /* soft divider line */
+}
+
+ul {
+    padding-left: 1.2rem;
+}
+
+p, li {
+    margin-bottom: 0.5rem;
+}
