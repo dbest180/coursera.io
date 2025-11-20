@@ -98,4 +98,79 @@ section:hover {
 
 /* Decorative glow bar on left of cards */
 section::before {
-    co
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+section:hover::before {
+    opacity: 1;
+}
+
+h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.75rem;
+    margin-bottom: 1.25rem;
+    color: var(--primary-color);
+    letter-spacing: -0.02em;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    padding: 0.75rem 0;
+    padding-left: 2rem;
+    position: relative;
+    color: var(--text-main);
+}
+
+li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+strong {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+em {
+    color: var(--text-muted);
+    font-style: normal;
+    font-family: 'Space Grotesk', monospace;
+    background: rgba(0, 242, 234, 0.1);
+    padding: 0.2rem 0.5rem;
+    border-radius: 6px;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    main {
+        padding: 2rem 1.5rem;
+    }
+    
+    section {
+        padding: 1.5rem;
+    }
+}
